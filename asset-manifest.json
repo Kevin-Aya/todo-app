@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/todo-app/static/css/main.9e55a97b.css",
+    "main.js": "/todo-app/static/js/main.065f57c6.js",
+    "static/media/background-mobile.png": "/todo-app/static/media/background-mobile.794f01569f0c99d814bf.png",
+    "static/media/lamp_focus.svg": "/todo-app/static/media/lamp_focus.7da1b97abe6dd19aa0a1.svg",
+    "static/media/lamp_completed.svg": "/todo-app/static/media/lamp_completed.427fc0aaa1dc439ec39c.svg",
+    "index.html": "/todo-app/index.html",
+    "static/media/search.svg": "/todo-app/static/media/search.5c0135fdc0267fbdddab.svg",
+    "static/media/lamp_added.svg": "/todo-app/static/media/lamp_added.f6cd9fe05d9eca9125f8.svg",
+    "static/media/new-todo.svg": "/todo-app/static/media/new-todo.28e1c31cded3167babfb.svg",
+    "static/media/delete.svg": "/todo-app/static/media/delete.c2e1e7790cdd29c8ef32.svg",
+    "main.9e55a97b.css.map": "/todo-app/static/css/main.9e55a97b.css.map",
+    "main.065f57c6.js.map": "/todo-app/static/js/main.065f57c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9e55a97b.css",
+    "static/js/main.065f57c6.js"
+  ]
+}
