@@ -1,0 +1,25 @@
+.todo-container {
+  width: 100%;
+  max-height: 485px;
+}
+ul {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+.subtitle {
+  font-size: 4.5vw;
+  width: 70%;
+  margin: 20px 15%;
+  text-align: center;
+  display: inline-block;
+}
+
+.todo-container > ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.todo-container > ul > div.skeleton:not(:last-child) {
+  margin-bottom: 20px;
+}

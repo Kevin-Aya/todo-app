@@ -1,0 +1,30 @@
+.search-container {
+  width: 100%;
+
+  display: flex;
+
+  margin-block: 20px;
+  padding: 0px 15px;
+
+  background: rgba(35, 32, 32, 0.95);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+  background: transparent url("./../../assets/SVG/search.svg") no-repeat left
+    center;
+  opacity: 0.6;
+  padding-left: 45px;
+  padding-block: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 5vw;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: opacity 0.2s ease-in;
+}
+
+.search-container input:focus {
+  opacity: 1;
+}

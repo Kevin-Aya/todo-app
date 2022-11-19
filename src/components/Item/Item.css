@@ -1,0 +1,85 @@
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 11px;
+  background: rgba(65, 65, 65, 0.01);
+  opacity: 0.9;
+  box-shadow: 0px 4px 3px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 99%;
+  margin-inline: auto;
+  backdrop-filter: blur(40px);
+  transition: transform 0.4s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.switch_lamp {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 11px;
+}
+
+/* Hide default HTML checkbox */
+.switch_lamp input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.lamp_image {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9;
+}
+
+.lamp_image::before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: transparent url("./../../assets/SVG/lamp_added.svg") no-repeat
+    center;
+  transition: background 0.4s ease-in;
+}
+
+input:not(:checked):hover + .lamp_image::before {
+  background: transparent url("./../../assets/SVG/lamp_focus.svg") no-repeat
+    center;
+  transition: background 0.4s ease-in;
+}
+
+input:checked + .lamp_image::before {
+  background: transparent url("./../../assets/SVG/lamp_completed.svg") no-repeat
+    center;
+  transition: background 0.4s ease-in;
+}
+
+span.text {
+  transition: 0.4s ease-in;
+  width: calc(100% - 82px);
+  /* justify-self: flex-start; */
+}
+
+input[type="button"] {
+  margin-left: 11px;
+  width: 20px;
+  height: 20px;
+  background: transparent url("./../../assets/SVG/delete.svg") no-repeat center;
+  border: none;
+  cursor: pointer;
+  display: none;
+}

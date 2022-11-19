@@ -1,0 +1,16 @@
+#modal {
+  position: fixed;
+  z-index: 1;
+
+  bottom: -150%;
+  width: 100vw;
+  height: 350px;
+  backdrop-filter: blur(10px);
+  border-radius: 50px 50px 0 0;
+  border: 1px transparent;
+  transition: bottom 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+#modal:not(:empty) {
+  bottom: 0px;
+}
