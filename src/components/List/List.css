@@ -1,6 +1,6 @@
 .todo-container {
   width: 100%;
-  max-height: 485px;
+  overflow: hidden;
 }
 ul {
   height: 100%;

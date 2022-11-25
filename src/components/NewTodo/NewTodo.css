@@ -6,7 +6,7 @@
   padding: 20px;
   background: rgba(35, 32, 32, 0.8);
   border-radius: 5px 5px 0px 0px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .new-todo-container > div {
@@ -21,6 +21,7 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.4s ease-in-out;
+  z-index: 1;
 }
 
 .new-todo-container > div:hover {
