@@ -5,8 +5,8 @@ import React from "react";
 const Item = ({ text, completed, onComplete, onDelete }) => {
   return (
     <li>
-      <label className="switch_lamp">
-        <input type="checkbox" checked={completed} onChange={onComplete} />
+      <label className="switch_lamp" onClick={onComplete}>
+        <input type="checkbox" checked={completed} />
         <span className="lamp_image" />
       </label>
       <span
@@ -14,7 +14,8 @@ const Item = ({ text, completed, onComplete, onDelete }) => {
         style={{
           textDecoration: completed && "line-through",
           fontStyle: completed && "italic",
-        }}>
+        }}
+        onClick={onComplete}>
         {text}
       </span>
       <input

@@ -71,7 +71,6 @@ input:checked + .lamp_image::before {
 span.text {
   transition: 0.4s ease-in;
   width: calc(100% - 82px);
-  /* justify-self: flex-start; */
 }
 
 input[type="button"] {
