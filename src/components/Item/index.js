@@ -20,6 +20,7 @@ const Item = ({ text, completed, onComplete, onDelete }) => {
       </span>
       <input
         style={{ display: completed && "inline-block" }}
+        className="close"
         type="button"
         disabled={!completed}
         onClick={onDelete}

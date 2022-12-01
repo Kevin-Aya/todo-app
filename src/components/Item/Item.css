@@ -73,7 +73,7 @@ span.text {
   width: calc(100% - 82px);
 }
 
-input[type="button"] {
+input[type="button"].close {
   margin-left: 11px;
   width: 20px;
   height: 20px;

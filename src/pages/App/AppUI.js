@@ -1,5 +1,9 @@
 import React, { useContext } from "react";
 
+import { StateContext } from "../../context/stateContext";
+
+import { TodoSkeleton } from "../../components/TodoSkeleton";
+
 import { Title } from "../../components/Title";
 import { Counter } from "./../../components/Counter";
 import { NewTodoButton } from "./../../components/NewTodo";
@@ -9,18 +13,17 @@ import { Item } from "./../../components/Item";
 import { Modal } from "./../../components/Modal";
 import { Form } from "../../components/Form";
 
-import { StateContext } from "../../context/stateContext";
-import { TodoSkeleton } from "../../components/TodoSkeleton";
+import { Container } from "../../components/Container";
 
 export const AppUI = () => {
   const {
-    states: { theme, loading, error, searchedTodos, searchValue, statusModal },
+    states: { loading, error, searchedTodos, searchValue, statusModal },
     mutations: { onComplete, onDelete },
   } = useContext(StateContext);
 
   return (
     <>
-      <div className={`app-${theme}`}>
+      <Container>
         <Title />
         <Search />
         <Counter />
@@ -58,7 +61,7 @@ export const AppUI = () => {
             <Form />
           </Modal>
         )}
-      </div>
+      </Container>
       <NewTodoButton />
     </>
   );

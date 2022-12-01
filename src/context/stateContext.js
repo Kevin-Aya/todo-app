@@ -63,6 +63,7 @@ const StateProvider = ({ children }) => {
     states: {
       loading,
       error,
+
       searchValue,
       completedTodos, //TODO: to review 'cause the code isn't necessary
       totalTodos,
